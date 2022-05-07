@@ -24,7 +24,7 @@ Create docker buildx instance, if you haven't already done so:
 ```
 docker buildx create --use
 ```
-then run script:
+then run the script:
 ```bash
 ./build.sh
 ```
