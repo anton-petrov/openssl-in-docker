@@ -49,8 +49,8 @@ echo "Baking new OVPN profile..."
 typewriter "***************************************************" .05
 echo
 
-sed '/^pkcs12/d' < ${1}.ovpn > $OUTPUT_DIR/${1}.ovpn
-echo -e "cert key ${1}_user.cr\nkey ${1}_user.crt\nca ${1}_ca.crt" >> $OUTPUT_DIR/${1}.ovpn
+sed '/^pkcs12/d' ${1}.ovpn > $OUTPUT_DIR/${1}.ovpn
+echo -e "cert ${1}_user.crt\nkey ${1}_user.crt\nca ${1}_ca.crt" >> $OUTPUT_DIR/${1}.ovpn
 cp ${1}.key $OUTPUT_DIR/
 
 typewriter "Mission accomplished, comrade! Go to $OUTPUT_DIR dir and get your converted ovpn profile =)" .05
