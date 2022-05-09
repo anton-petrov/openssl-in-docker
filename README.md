@@ -1,8 +1,9 @@
 # pfSense to PEM converter
 
-## HowTo
+## About
 
 Solution that allows to use Ubuntu NetworkManager+OpenVPN with PfSense profile.
+Tested on Ubuntu **22.04**.
 
 ## OpenSSL
 
